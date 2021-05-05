@@ -23,6 +23,7 @@ theme.font = standardfont
 theme.title_font = standardfont
 
 -- Background
+--theme.bg_normal     = "#111111"
 theme.bg_normal     = "#242424"
 theme.bg_focus      = "#444444"
 theme.bg_urgent     = "#ff0000"
@@ -30,17 +31,19 @@ theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 
 -- Foreground
+--theme.fg_normal     = "#111111"
 theme.fg_normal     = "#aaaaaa"
 theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
 -- Gaps
-theme.useless_gap   = dpi(0)
+theme.useless_gap   = dpi(8)
 theme.gap_single_client = false
 
 -- Window Borders
-theme.border_width  = dpi(0)
+theme.border_width  = dpi(1)
+--theme.border_normal = "#dddddd"
 theme.border_normal = "#cccccc"
 theme.border_focus  = theme.border_normal
 theme.border_marked = theme.border_normal
@@ -106,8 +109,10 @@ theme.menu_height = dpi(32)
 theme.menu_width  = dpi(200)
 
 -- fallback not used in titlebar
-theme.titlebar_bg_focus = "#e8e8e7"
-theme.titlebar_bg_normal = "#e8e8e7"
+theme.titlebar_bg_focus = "#cccccc"
+theme.titlebar_bg_normal = "#cccccc"
+--theme.titlebar_bg_focus = "#e8e8e7"
+--theme.titlebar_bg_normal = "#e8e8e7"
 theme.titlebar_fg_focus = "#2e3436"
 theme.titlebar_fg_normal = "#aaaaaa"
 
@@ -136,6 +141,31 @@ theme.titlebar_maximized_button_normal_inactive = icon_dir .. 'normal.svg'
 theme.titlebar_maximized_button_focus_inactive  = icon_dir .. 'maximized_focus.svg'
 theme.titlebar_maximized_button_normal_inactive_hover = icon_dir .. 'maximized_focus_hover.svg'
 theme.titlebar_maximized_button_focus_inactive_hover  = icon_dir .. 'maximized_focus_hover.svg'
+
+-- Floating Button
+theme.titlebar_floating_button_normal_inactive = icon_dir.."floating_normal_inactive.png"
+theme.titlebar_floating_button_focus_inactive  = icon_dir.."floating_focus_inactive.png"
+theme.titlebar_floating_button_normal_active   = icon_dir.."floating_normal_active.png"
+theme.titlebar_floating_button_focus_active    = icon_dir.."floating_focus_active.png"
+
+
+-- You can use your own layout icons like this:
+theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
+theme.layout_fairv = themes_path.."default/layouts/fairvw.png"
+theme.layout_floating  = themes_path.."default/layouts/floatingw.png"
+theme.layout_magnifier = themes_path.."default/layouts/magnifierw.png"
+theme.layout_max = themes_path.."default/layouts/maxw.png"
+theme.layout_fullscreen = themes_path.."default/layouts/fullscreenw.png"
+theme.layout_tilebottom = themes_path.."default/layouts/tilebottomw.png"
+theme.layout_tileleft   = themes_path.."default/layouts/tileleftw.png"
+theme.layout_tile = themes_path.."default/layouts/tilew.png"
+theme.layout_tiletop = themes_path.."default/layouts/tiletopw.png"
+theme.layout_spiral  = themes_path.."default/layouts/spiralw.png"
+theme.layout_dwindle = themes_path.."default/layouts/dwindlew.png"
+theme.layout_cornernw = themes_path.."default/layouts/cornernww.png"
+theme.layout_cornerne = themes_path.."default/layouts/cornernew.png"
+theme.layout_cornersw = themes_path.."default/layouts/cornersww.png"
+theme.layout_cornerse = themes_path.."default/layouts/cornersew.png"
 
 
 -- You can add as many variables as

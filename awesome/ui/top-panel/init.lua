@@ -45,7 +45,7 @@ local TopPanel = function(s)
     s.mytasklist, -- Middle widget
     { -- Right widgets
       layout = wibox.layout.fixed.horizontal,
-      mykeyboardlayout,
+      --v mykeyboardlayout,
       wibox.widget.systray(),
       mytextclock,
       s.mylayoutbox,
